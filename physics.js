@@ -9,10 +9,9 @@ function solve() {
     var c = document.getElementById('c').value;
     var d = document.getElementById('d').value;
 
-    var result1 = (a * d)  ;
-    var result2 = (Math.cos(b)- Math.cos(c) )
-    var result3= result1 * result2
-
+    var result1 = (a * c)  ;
+    var result2 = ((Math.cos(b)-(Math.cos(d))));
+    var result3 = (result1 * result2);
  if (isNaN(a)|| isNaN(b) || isNaN(c) || a==0)
   {
         changeElementClass("solutions", "invalid");
