@@ -10,22 +10,26 @@ function solve() {
     var d = document.getElementById('d').value;
 
     var result1 = (a * c)  ;
-    var result2 = ((Math.cos(b)-(Math.cos(d))));
-    var result3 = (result1 * result2);
+
+
+
+    var result2 = (b* Math.PI /180 )
+    var result3 =(Math.cos(result2))
+
  if (isNaN(a)|| isNaN(b) || isNaN(c) || a==0)
   {
         changeElementClass("solutions", "invalid");
-        return "You entered an incorrect value for either A, B, or C. Please try again.";
+        return "You entered an incorrect value for either N, M, or the Angle degree. Please try again.";
     } else if (isNaN(result1 + result2)) {
         changeElementClass("solutions", "no_real");
         return "There are no real solutions";
 
     } else {
         changeElementClass("solutions", "real");
-        return "The roots to the quadratic are " + result1 + " and " + result2 + ".";
-
+        return + result3 ;
     }
 }
+
 function changeElementClass(id, cssclass) {
     var el = document.getElementById(id);
     el.className = cssclass;
