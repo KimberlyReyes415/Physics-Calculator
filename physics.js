@@ -8,13 +8,20 @@ function solve() {
     var b = document.getElementById('b').value;
     var c = document.getElementById('c').value;
     var d = document.getElementById('d').value;
+      var e = document.getElementById('e').value;
+      var f = document.getElementById('f').value;
 
-    var result1 = (a * c)  ;
+    var result1 = (a * b)  ;
+ var result2 = (c* Math.PI /180 );
+    var result3 =(Math.cos(result2) * result1);
+    var result4=  ( d* e) ;
+ var result5 = (f* Math.PI /180 );
+    var result6 =(Math.cos(result5) * result4) ;
+    var result7 = (result3 + result6);
+    var result8 = (Math.round(result7));
 
 
 
-    var result2 = (b* Math.PI /180 )
-    var result3 =(Math.cos(result2))
 
  if (isNaN(a)|| isNaN(b) || isNaN(c) || a==0)
   {
@@ -26,7 +33,7 @@ function solve() {
 
     } else {
         changeElementClass("solutions", "real");
-        return + result3 ;
+        return +result7 +"n/m" +"Or round is" +result8 ;
     }
 }
 
