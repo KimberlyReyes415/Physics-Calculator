@@ -16,17 +16,3 @@ body {
     color: #000000;
 }
 
-.real {
-    color: darkslategray;
-    border-color: darkseagreen;
-}
-
-.no_real {
-    color: darkslategray;
-    border-color: coral;
-}
-
-.invalid {
-    color: red;
-    border-color: firebrick;
-}
