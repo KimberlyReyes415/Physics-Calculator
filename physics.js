@@ -11,6 +11,10 @@ function solve() {
     var solution1 = document.getElementById('solution1');
     var solution2 = document.getElementById('solution2');
     var work1 = document.getElementById('work1');
+    var work2 = document.getElementById('work2');
+     var work3 = document.getElementById('work3');
+    var work4 = document.getElementById('work4');
+
 
 
 
@@ -28,17 +32,20 @@ function solve() {
 
     if (isNaN(a) || isNaN(b) || isNaN(c) || a == 0) {
 
-      solution1.textContent= "You entered an incorrect value for either N, M, or the Angle degree. Please try again.";
+        solution1.textContent = "You entered an incorrect value for either N, M, or the Angle degree. Please try again.";
     } else if (isNaN(result1 + result2)) {
-      solution1.textContent= "There are no real solutions";
+        solution1.textContent = "There are no real solutions";
 
     } else {
 
-      solution1.textContent= +result7 + " n/m "
+        solution1.textContent = +result7 + " N/m ";
         solution2.textContent = " Rouded " + result8;
-        work1.textContent = " Step 1" ;
+        work1.textContent = " Step 1";
+        work2.textContent = "Multiply your first N & m "+'\xa0\xa0\xa0' +a +"*" +b +'\xa0\xa0\xa0'+"is"+'\xa0\xa0\xa0' +result1;
+
+          work3.textContent = a+'\xa0\xa0\xa0' +"Then multiply by the angle degree (cos) which is"+ '\xa0\xa0\xa0'+result3;
+        work4.textContent = " Step 2";
 
 
     }
 }
-
