@@ -10,6 +10,7 @@ function solve() {
     var f = document.getElementById('f').value;
     var solution1 = document.getElementById('solution1');
     var solution2 = document.getElementById('solution2');
+    var work1 = document.getElementById('work1');
 
 
 
@@ -26,21 +27,18 @@ function solve() {
 
 
     if (isNaN(a) || isNaN(b) || isNaN(c) || a == 0) {
-        changeElementClass("solutions", "invalid");
+
       solution1.textContent= "You entered an incorrect value for either N, M, or the Angle degree. Please try again.";
     } else if (isNaN(result1 + result2)) {
-        changeElementClass("solutions", "no_real");
       solution1.textContent= "There are no real solutions";
 
     } else {
-        changeElementClass("solutions", "real");
+
       solution1.textContent= +result7 + " n/m "
         solution2.textContent = " Rouded " + result8;
+        work1.textContent = " Step 1" ;
+
 
     }
 }
 
-function changeElementClass(id, cssclass) {
-    var el = document.getElementById(id);
-    el.className = cssclass;
-}
