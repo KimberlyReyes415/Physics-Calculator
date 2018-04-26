@@ -42,7 +42,7 @@ function solve() {
 
     } else {
 
-        solution1.textContent = result7 + " N/m ";
+        solution1.textContent = result7 + " N/m or J";
         solution2.textContent = " Rouded " + result8;
         work1.textContent = " Step 1";
         work2.textContent = "Multiply your first N & m " + '\xa0\xa0\xa0' + a + "*" + b + '\xa0\xa0\xa0' + "is" + '\xa0\xa0\xa0' + result1;
